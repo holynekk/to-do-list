@@ -1,5 +1,9 @@
 # to-do-list
 
+[LIVE DEMO](https://holynekk.github.io/to-do-list/)
+
+Currently its not responsive, so reviewing it on 1080p screen is the best for now.
+
 # Build With
 
 - Javascript
@@ -7,12 +11,7 @@
 - Webpack
 - npm
 
-
 This project is a classic to-do-list app. It allows you to add different folders/projects and each one of them has sub tasks with title, description, date and priority info. All the information is stored locally in your browser. Namely, at the beginning, app start a local container in your browser that holds all your projects, and save it there.
-
-[LIVE DEMO](https://holynekk.github.io/to-do-list/)
-
-Currently its not responsive, so reviewing it on 1080p screen is the best for now.
 
 # Learning Outcomes
 
