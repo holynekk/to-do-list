@@ -16,7 +16,7 @@ function createProject(name = "Default Project", description = "Nothing", todos 
 }
 
 
-function createToDo(name = "Default Task", detail = "Nothing", duedate = "", priority = 1, completed = false){
+function createToDo(name = "Default Task", detail = "Nothing", duedate = "2023-01-01", priority = 1, completed = false){
     let newToDo = new ToDo(name, detail, duedate, priority, completed);
     return newToDo;
 }

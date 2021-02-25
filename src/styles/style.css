@@ -17,7 +17,7 @@ body{
 #project-panel{
     height: 100%;
     width: 25vw;
-    background-color: #373c3f;
+    background-color: #000000;
     overflow-y: scroll;
     -ms-overflow-style: none;  
     scrollbar-width: none;  
@@ -32,7 +32,7 @@ body{
 #main-panel{
     height: 100%;
     width: 75vw;
-    background-color: #2f3437;
+    background-color: #daf1ff;
     overflow-y: scroll;
     -ms-overflow-style: none;  
     scrollbar-width: none;  
@@ -45,26 +45,27 @@ body{
 }
 
 #project-header{
-
-    font-size: 32px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 64px;
     color: rgba(255, 255, 255, 0.9);
     margin-top: 20px;
     line-height: 30px;
+    text-shadow: 1px 1px 1px black;
 }
 
 .divider{
-    height: 1px;
+    height: 2px;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
 .projects{
-
+    font-family: 'Comfortaa', cursive;
     font-size: 24px;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
     padding: 10px;
-    border-radius: 3px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,7 +75,7 @@ body{
 }
 
 .projects:hover{
-    background-color: #444a4d;
+    background-color: #5c6468;
 }
 
 .active{
@@ -100,7 +101,8 @@ body{
 
 #add-project {
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 255, 0, 0.7);
 }
 
 #add-project:hover{
@@ -109,19 +111,31 @@ body{
 
 #add-project-text{
     font-size: 20px;
-
+    font-family: 'Fredoka One', cursive;
     color: rgba(255, 255, 255, 0.8);
     margin-right: 12px;
     margin-top: 12px;
     margin-bottom: 12px;
 }
 
+#made-by{
+    color:white;
+    background-color: rgba(255, 255, 255, 0.2);
+    text-align: center;
+    position: absolute;
+    width: 25vw;
+    bottom: 0px;
+    font-family: monospace;
+    line-height: 1.5rem;
+}
+
 #plus-icon{
     font-size: 24px;
-
+    font-family: 'Fredoka One', cursive;
     margin-left: 12px;
     margin-right: 8px;
-    color: #ff3f3f;
+    color: white;
+    /*color: #ff3f3f;*/
 }
 
 #add-task-container{
@@ -133,7 +147,8 @@ body{
 
 #add-task {
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 #add-task:hover{
@@ -142,7 +157,7 @@ body{
 
 #add-task-text{
     font-size: 20px;
-
+    font-family: 'Fredoka One', cursive;
     color: rgba(255, 255, 255, 0.8);
     margin-right: 12px;
     margin-top: 12px;
@@ -151,10 +166,10 @@ body{
 
 #plus-icon-task{
     font-size: 24px;
-
+    font-family: 'Fredoka One', cursive;
     margin-left: 12px;
     margin-right: 8px;
-    color: #ff3f3f;
+    color: rgb(255, 0, 0, 0.8);
 }
 
 #add-project-window-container{
@@ -208,7 +223,7 @@ body{
 
 #add-project-button{
     font-size: 32px;
-
+    font-family: 'Comfortaa', cursive;
     color: white;
     background-color: #00cd00;
     padding: 12px;
@@ -219,7 +234,7 @@ body{
 
 #add-project-cancel-button{
     font-size: 32px;
-
+    font-family: 'Comfortaa', cursive;
     color: white;
     background-color: #ff2d4a;
     padding: 12px;
@@ -239,15 +254,16 @@ body{
 
 #project-name-main {
     font-size: 40px;
-
-    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Fredoka One', cursive;
+    color: rgba(0, 0, 0, 0.8);
     margin-bottom: 4px;
 }
 
 #project-description-main {
     font-size: 24px;
-    color: rgba(255, 255, 255, 0.9);
-
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Caveat', cursive;
+    letter-spacing: 2px;
 }
 
 #edit-project-info-icon {
@@ -255,8 +271,8 @@ body{
     top: 8px;
     cursor: pointer;
     font-size: 16px;
-
-    color: rgba(255, 255, 255, 0.9);
+    font-family: monospace;
+    color: rgba(0, 0, 0, 0.9);
 }
 
 #edit-project-info-icon:hover{
@@ -273,7 +289,8 @@ body{
     margin-bottom: 12px;
     padding: 15px;
     border-radius: 5px;
-    border: 1px solid rgba(255,255,255,0.4);
+    border: 1px solid rgba(0,0,0,0.4);
+    background-color: rgba(0,0,0,0.3);;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -291,6 +308,7 @@ body{
     padding: 15px;
     border-radius: 5px;
     border: 1px solid rgba(255,255,255,0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     display: none;
     align-items: center;
     justify-content: space-between;
@@ -322,7 +340,7 @@ body{
 
 .checked{
     background-color: #7AF76E;
-    background-image: url('../assets/imgs/tick.svg');
+    background-image: url('./../../dist/img/checkmark.png');
     background-position: 50% 50%;
     background-size: 15px;
     background-repeat: no-repeat;
@@ -343,7 +361,8 @@ body{
 }
 
 .task-edit {
-    width: 16px;
+    width: 24px;
+    height: 24px;
     margin-left: 12px;
     cursor: pointer;
 }
@@ -371,7 +390,7 @@ body{
     margin-bottom: 5px;
     background-color: #444a4d;
     border: none;
-
+    
     color: white;
     font-size: 32px;
     padding: 12px;
@@ -386,11 +405,11 @@ body{
 
 #edit-project-button{
     font-size: 24px;
-
+    font-family: 'Comfortaa', cursive;
     color: white;
     background-color: #00cd00;
     padding: 12px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 4px;
     margin-bottom: 0px;
     cursor: pointer;
@@ -398,12 +417,11 @@ body{
 
 #edit-project-cancel-button{
     font-size: 24px;
-
-    
+    font-family: 'Comfortaa', cursive;
     color: white;
     background-color: #ff2d4a;
     padding: 12px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 4px;
     margin-bottom: 0px;
     margin-left: 12px;
@@ -423,7 +441,7 @@ body{
 .to-do-name{
     background-color: #444a4d;
     border: none;
-
+    font-family: 'Comfortaa', cursive;
     color: white;
     font-size: 18px;
     padding: 8px;
@@ -433,9 +451,9 @@ body{
 }
 
 .add-to-do-name{
-    background-color: #444a4d;
+    background-color: rgba(0, 0, 0, 0.6);
     border: none;
-
+    font-family: 'Comfortaa', cursive;
     color: white;
     font-size: 18px;
     padding: 8px;
@@ -463,7 +481,7 @@ body{
 }
 
 .add-to-do-date{
-    background-color: #444a4d;
+    background-color:  rgba(0, 0, 0, 0.6);
     border: none;
 
     color: white;
@@ -480,11 +498,11 @@ body{
 
 .edit-todo-button{
     font-size: 16px;
-
+    font-family: 'Comfortaa', cursive;
     color: white;
     background-color: #00cd00;
     padding: 12px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 0px;
     margin-left: 40px;
     margin-bottom: 0px;
@@ -493,11 +511,11 @@ body{
 
 .edit-todo-cancel-button{
     font-size: 16px;
-
+    font-family: 'Comfortaa', cursive;
     color: white;
     background-color: #ff2d4a;
     padding: 12px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 12px;
@@ -512,11 +530,11 @@ body{
 
 .add-todo-button{
     font-size: 16px;
-
+    font-family: 'Comfortaa', cursive;
     color: white;
     background-color: #00cd00;
     padding: 12px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 0px;
     margin-left: 40px;
     margin-bottom: 0px;
@@ -525,11 +543,11 @@ body{
 
 .add-todo-cancel-button{
     font-size: 16px;
-
+    font-family: 'Comfortaa', cursive;
     color: white;
     background-color: #ff2d4a;
     padding: 12px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 12px;

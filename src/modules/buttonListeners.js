@@ -17,7 +17,6 @@ function createProjectBtnListeners(){
     let trashImage = document.querySelectorAll(".trash-image");
     trashImage.forEach(deleteBtn => deleteBtn.addEventListener('click', function(e){
         deleteProject(e.target.parentNode.dataset.value);
-        
         storeLocally();
     }))
 }

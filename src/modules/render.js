@@ -24,7 +24,7 @@ function renderProjects(){
 
         const trashImage = document.createElement('img');
         trashImage.classList.add('trash-image');
-        trashImage.src = "./../../dist/img/trash-image.png";
+        trashImage.src = "./../dist/img/trash-image.png";
 
         projects.appendChild(trashImage);
         projectContainer.appendChild(projects);
@@ -55,7 +55,7 @@ function renderToDos(){
 
         const checkbox = document.createElement('div');
         checkbox.classList.add('checkbox');
-        if(item.complete) checkbox.classList.add('checked');
+        if(item.completed) checkbox.classList.add('checked');
         lefttodo.appendChild(checkbox);
 
         const taskName = document.createElement('div');
@@ -87,12 +87,13 @@ function renderToDos(){
 
         const taskEdit = document.createElement('img');
         taskEdit.classList.add('task-edit');
-        taskEdit.src = "./../../dist/img/edit.png";
+        taskEdit.src = "./../dist/img/pen.png";
+        taskEdit.alt="yarark";
         righttodo.appendChild(taskEdit);
 
         const taskDelete = document.createElement('img');
         taskDelete.classList.add('task-delete');
-        taskDelete.src = "./../../dist/img/trash-image.png";
+        taskDelete.src = "./../dist/img/trash-image.png";
         righttodo.appendChild(taskDelete);
 
         to_do.appendChild(righttodo);
