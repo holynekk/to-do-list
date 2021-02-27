@@ -1,6 +1,6 @@
 # to-do-list
 
-[LIVE DEMO](https://holynekk.github.io/to-do-list/)
+[LIVE DEMO](https://holynekk.github.io/to-do-list/dist/index.html)
 
 Currently its not responsive, so reviewing it on 1080p screen is the best for now.
 
